@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:\Users\bitomaxsp\projects\kicad\UNOvx\UNOvx.sch)
-    (date "10/20/2019 1:20:28 PM")
+    (date "10/20/2019 3:20:21 PM")
     (tool "Eeschema (5.1.4)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -268,7 +268,7 @@
       (tstamp 5DF17941))
     (comp (ref IC1)
       (value BTS462T)
-      (footprint TO-252-5PIN)
+      (footprint kicad-lib:TO-252-5PIN)
       (fields
         (field (name Description) "Smart High-Side Power Switch TO252-5 Infineon BTS462T Intelligent Power Switch, High Side, 4.4A, -10  16V, 5-Pin, TO-252")
         (field (name Manufacturer_Name) Infineon)
