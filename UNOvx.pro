@@ -1,4 +1,4 @@
-update=10/20/2019 2:52:11 PM
+update=10/21/2019 8:12:55 PM
 version=1
 last_client=kicad
 [cvpcb]
@@ -36,8 +36,9 @@ MinMicroViaDiameter=0.2
 MinMicroViaDrill=0.09999999999999999
 MinHoleToHole=0.25
 TrackWidth1=0.25
-TrackWidth2=1
-TrackWidth3=1.5
+TrackWidth2=0.8
+TrackWidth3=1
+TrackWidth4=1.5
 ViaDiameter1=0.6
 ViaDrill1=0.4
 ViaDiameter2=0.8
@@ -195,7 +196,7 @@ Type=0
 Enabled=0
 [pcbnew/Layer.B.Cu]
 Name=B.Cu
-Type=0
+Type=1
 Enabled=1
 [pcbnew/Layer.B.Adhes]
 Enabled=1
@@ -238,7 +239,7 @@ Enabled=0
 [pcbnew/Netclasses]
 [pcbnew/Netclasses/Default]
 Name=Default
-Clearance=0.2
+Clearance=0.3
 TrackWidth=0.25
 ViaDiameter=0.6
 ViaDrill=0.4
@@ -260,7 +261,7 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/2]
 Name=Signal
-Clearance=0.2
+Clearance=0.4
 TrackWidth=0.25
 ViaDiameter=0.6
 ViaDrill=0.4
