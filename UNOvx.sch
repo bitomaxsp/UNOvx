@@ -14,9 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-NoConn ~ 14650 7000
-Text Notes 15700 1000 0    60   ~ 0
-Holes
 Text Notes 13400 750  0    60   ~ 0
 Shield for Arduino that uses\nthe same pin disposition\nlike "Uno" board Rev 3.
 $Comp
@@ -54,54 +51,6 @@ F 3 "" H 14550 8550 50  0000 C CNN
 	1    14550 8550
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x01 P5
-U 1 1 56D71177
-P 15650 650
-F 0 "P5" V 15750 650 50  0000 C CNN
-F 1 "CONN_01X01" V 15750 650 50  0001 C CNN
-F 2 "Socket_Arduino_Uno:Arduino_1pin" H 15571 724 20  0000 C CNN
-F 3 "" H 15650 650 50  0000 C CNN
-	1    15650 650 
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 P6
-U 1 1 56D71274
-P 15750 650
-F 0 "P6" V 15850 650 50  0000 C CNN
-F 1 "CONN_01X01" V 15850 650 50  0001 C CNN
-F 2 "Socket_Arduino_Uno:Arduino_1pin" H 15750 650 20  0001 C CNN
-F 3 "" H 15750 650 50  0000 C CNN
-	1    15750 650 
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 P7
-U 1 1 56D712A8
-P 15850 650
-F 0 "P7" V 15950 650 50  0000 C CNN
-F 1 "CONN_01X01" V 15950 650 50  0001 C CNN
-F 2 "Socket_Arduino_Uno:Arduino_1pin" V 15850 650 20  0001 C CNN
-F 3 "" H 15850 650 50  0000 C CNN
-	1    15850 650 
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 P8
-U 1 1 56D712DB
-P 15950 650
-F 0 "P8" V 16050 650 50  0000 C CNN
-F 1 "CONN_01X01" V 16050 650 50  0001 C CNN
-F 2 "Socket_Arduino_Uno:Arduino_1pin" H 15874 572 20  0000 C CNN
-F 3 "" H 15950 650 50  0000 C CNN
-	1    15950 650 
-	0    -1   -1   0   
-$EndComp
-NoConn ~ 15650 850 
-NoConn ~ 15750 850 
-NoConn ~ 15850 850 
-NoConn ~ 15950 850 
 Wire Notes Line
 	13375 825  14775 825 
 Wire Notes Line
@@ -142,10 +91,6 @@ Wire Notes Line
 	13350 3450 16050 3450
 Text Notes 14950 7000 0    60   ~ 0
 1
-Wire Notes Line
-	16050 1000 15550 1000
-Wire Notes Line
-	15550 1000 15550 500 
 $Comp
 L MCU_Microchip_ATmega:ATmega328P-PU U1
 U 1 1 5DA59660
@@ -230,45 +175,45 @@ Wire Wire Line
 $Comp
 L Device:C C5
 U 1 1 5DAC0ECB
-P 3950 9150
-F 0 "C5" H 3835 9104 50  0000 R CNN
-F 1 "22pF" H 3835 9195 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 3988 9000 50  0001 C CNN
-F 3 "~" H 3950 9150 50  0001 C CNN
-	1    3950 9150
+P 3950 9650
+F 0 "C5" H 3835 9604 50  0000 R CNN
+F 1 "22pF" H 3835 9695 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3988 9500 50  0001 C CNN
+F 3 "~" H 3950 9650 50  0001 C CNN
+	1    3950 9650
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:C C3
 U 1 1 5DAC2CA7
-P 2950 9150
-F 0 "C3" H 2835 9104 50  0000 R CNN
-F 1 "22pF" H 2835 9195 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 2988 9000 50  0001 C CNN
-F 3 "~" H 2950 9150 50  0001 C CNN
-	1    2950 9150
+P 2950 9650
+F 0 "C3" H 2835 9604 50  0000 R CNN
+F 1 "22pF" H 2835 9695 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2988 9500 50  0001 C CNN
+F 3 "~" H 2950 9650 50  0001 C CNN
+	1    2950 9650
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR04
 U 1 1 5DAC4F01
-P 2950 9300
-F 0 "#PWR04" H 2950 9050 50  0001 C CNN
-F 1 "GND" H 2955 9127 50  0000 C CNN
-F 2 "" H 2950 9300 50  0001 C CNN
-F 3 "" H 2950 9300 50  0001 C CNN
-	1    2950 9300
+P 2950 9800
+F 0 "#PWR04" H 2950 9550 50  0001 C CNN
+F 1 "GND" H 2955 9627 50  0000 C CNN
+F 2 "" H 2950 9800 50  0001 C CNN
+F 3 "" H 2950 9800 50  0001 C CNN
+	1    2950 9800
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR09
 U 1 1 5DAC5484
-P 3950 9300
-F 0 "#PWR09" H 3950 9050 50  0001 C CNN
-F 1 "GND" H 3955 9127 50  0000 C CNN
-F 2 "" H 3950 9300 50  0001 C CNN
-F 3 "" H 3950 9300 50  0001 C CNN
-	1    3950 9300
+P 3950 9800
+F 0 "#PWR09" H 3950 9550 50  0001 C CNN
+F 1 "GND" H 3955 9627 50  0000 C CNN
+F 2 "" H 3950 9800 50  0001 C CNN
+F 3 "" H 3950 9800 50  0001 C CNN
+	1    3950 9800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -286,12 +231,8 @@ Wire Wire Line
 	3300 8950 2950 8950
 Connection ~ 2950 8950
 Wire Wire Line
-	2950 8950 2950 9000
-Wire Wire Line
 	3600 8950 3950 8950
 Connection ~ 3950 8950
-Wire Wire Line
-	3950 8950 3950 9000
 $Comp
 L Device:R R7
 U 1 1 5DADF607
@@ -864,7 +805,7 @@ F 3 "" H 14400 6750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	14400 6750 14400 7300
+	14400 6750 14400 7000
 $Comp
 L Connector_Generic:Conn_01x06 P1
 U 1 1 56D70DD8
@@ -1158,4 +1099,34 @@ F 9 "BTS462T" H 7850 8900 50  0001 L CNN "Manufacturer_Part_Number"
 	1    0    0    -1  
 $EndComp
 Connection ~ 6800 9700
+$Comp
+L Device:Crystal Y2
+U 1 1 5E07A052
+P 3450 9400
+F 0 "Y2" H 3450 9668 50  0000 C CNN
+F 1 "16MHz" H 3450 9577 50  0000 C CNN
+F 2 "Crystal:Resonator_SMD_muRata_CDSCB-2Pin_4.5x2.0mm" H 3450 9400 50  0001 C CNN
+F 3 "~" H 3450 9400 50  0001 C CNN
+	1    3450 9400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 8950 2950 9400
+Wire Wire Line
+	3300 9400 2950 9400
+Connection ~ 2950 9400
+Wire Wire Line
+	2950 9400 2950 9500
+Wire Wire Line
+	3950 8950 3950 9400
+Wire Wire Line
+	3600 9400 3950 9400
+Connection ~ 3950 9400
+Wire Wire Line
+	3950 9400 3950 9500
+Wire Wire Line
+	14650 7000 14400 7000
+Connection ~ 14400 7000
+Wire Wire Line
+	14400 7000 14400 7300
 $EndSCHEMATC
