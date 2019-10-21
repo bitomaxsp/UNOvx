@@ -735,8 +735,6 @@ Wire Wire Line
 Wire Wire Line
 	2000 2000 2000 1400
 Connection ~ 2000 2000
-Wire Wire Line
-	2250 1900 2250 1200
 Connection ~ 2250 1200
 NoConn ~ 8000 9500
 Wire Wire Line
@@ -785,8 +783,6 @@ F 3 "~" H 2000 2000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3600 4400 3600 4000
-Wire Wire Line
-	2000 2000 2250 2000
 Wire Wire Line
 	3500 4400 3500 4000
 Wire Wire Line
@@ -1011,17 +1007,6 @@ F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 3950 1351 50  0001 C CNN
 F 3 "http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF" H 4050 950 50  0001 C CNN
 	1    3950 1200
 	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x02_Male J2
-U 1 1 5DC0B3E2
-P 2450 1900
-F 0 "J2" H 2422 1874 50  0000 R CNN
-F 1 "Ext. Power" H 2422 1783 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2450 1900 50  0001 C CNN
-F 3 "~" H 2450 1900 50  0001 C CNN
-	1    2450 1900
-	-1   0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR016
