@@ -1,4 +1,4 @@
-update=10/21/2019 9:11:31 PM
+update=10/22/2019 9:23:12 PM
 version=1
 last_client=kicad
 [cvpcb]
@@ -23,7 +23,7 @@ ERC_TestSimilarLabels=1
 version=1
 PageLayoutDescrFile=
 LastNetListRead=UNOvx.net
-CopperLayerCount=4
+CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0
 AllowBlindVias=0
@@ -77,11 +77,11 @@ Enabled=1
 [pcbnew/Layer.In1.Cu]
 Name=In1.Cu
 Type=0
-Enabled=1
+Enabled=0
 [pcbnew/Layer.In2.Cu]
 Name=In2.Cu
 Type=0
-Enabled=1
+Enabled=0
 [pcbnew/Layer.In3.Cu]
 Name=In3.Cu
 Type=0
@@ -215,9 +215,9 @@ Enabled=1
 [pcbnew/Layer.F.Mask]
 Enabled=1
 [pcbnew/Layer.Dwgs.User]
-Enabled=1
+Enabled=0
 [pcbnew/Layer.Cmts.User]
-Enabled=1
+Enabled=0
 [pcbnew/Layer.Eco1.User]
 Enabled=0
 [pcbnew/Layer.Eco2.User]
