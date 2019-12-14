@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:UNOvx-cache
 EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
@@ -17,14 +16,14 @@ $EndDescr
 Text Notes 13400 750  0    60   ~ 0
 Shield for Arduino that uses\nthe same pin disposition\nlike "Uno" board Rev 3.
 $Comp
-L Connector_Generic:Conn_01x08 P2
+L Connector_Generic:Conn_01x09 P2
 U 1 1 56D70129
-P 14850 7300
-F 0 "P2" H 14850 7750 50  0000 C CNN
-F 1 "Power" V 14950 7300 50  0000 C CNN
-F 2 "Socket_Arduino_Uno:Socket_Strip_Arduino_1x08" V 15000 7300 20  0000 C CNN
-F 3 "" H 14850 7300 50  0000 C CNN
-	1    14850 7300
+P 14850 7400
+F 0 "P2" H 14850 7850 50  0000 C CNN
+F 1 "Power" V 14950 7400 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical" V 15000 7400 20  0000 C CNN
+F 3 "" H 14850 7400 50  0000 C CNN
+	1    14850 7400
 	1    0    0    -1  
 $EndComp
 Text Label 13900 7200 0    60   ~ 0
@@ -43,48 +42,18 @@ $EndComp
 $Comp
 L power:GND #PWR026
 U 1 1 56D70CC2
-P 14550 8550
-F 0 "#PWR026" H 14550 8300 50  0001 C CNN
-F 1 "GND" H 14550 8400 50  0000 C CNN
-F 2 "" H 14550 8550 50  0000 C CNN
-F 3 "" H 14550 8550 50  0000 C CNN
-	1    14550 8550
+P 14300 7800
+F 0 "#PWR026" H 14300 7550 50  0001 C CNN
+F 1 "GND" H 14300 7650 50  0000 C CNN
+F 2 "" H 14300 7800 50  0000 C CNN
+F 3 "" H 14300 7800 50  0000 C CNN
+	1    14300 7800
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
 	13375 825  14775 825 
 Wire Notes Line
 	14775 825  14775 475 
-Wire Wire Line
-	14650 7300 14400 7300
-Wire Wire Line
-	14650 7400 14550 7400
-Wire Wire Line
-	14650 7700 14200 7700
-Wire Wire Line
-	14650 7500 14550 7500
-Wire Wire Line
-	14650 7600 14550 7600
-Connection ~ 14550 7600
-Wire Wire Line
-	14200 7700 14200 6850
-Wire Wire Line
-	14300 7400 14300 6750
-$Comp
-L Connector_Generic:Conn_01x10 P3
-U 1 1 56D721E0
-P 15250 1500
-F 0 "P3" H 15250 2050 50  0000 C CNN
-F 1 "Digital" V 15350 1500 50  0000 C CNN
-F 2 "Socket_Arduino_Uno:Socket_Strip_Arduino_1x10" V 15400 1500 20  0000 C CNN
-F 3 "" H 15250 1500 50  0000 C CNN
-	1    15250 1500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	14550 7500 14550 7600
-Wire Wire Line
-	14550 7600 14550 8550
 Wire Notes Line
 	13350 500  13350 3450
 Wire Notes Line
@@ -118,47 +87,16 @@ L Connector_Generic:Conn_01x08 P4
 U 1 1 56D7164F
 P 15250 2900
 F 0 "P4" H 15250 2400 50  0000 C CNN
-F 1 "Digital" V 15350 2900 50  0000 C CNN
+F 1 "Digital PD" V 15350 2900 50  0000 C CNN
 F 2 "Socket_Arduino_Uno:Socket_Strip_Arduino_1x08" V 15400 2850 20  0000 C CNN
 F 3 "" H 15250 2900 50  0000 C CNN
 	1    15250 2900
 	1    0    0    -1  
 $EndComp
-Text Label 15500 2000 0    60   ~ 0
-A5(SCL)
-Text Label 15500 1900 0    60   ~ 0
-A4(SDA)
-Text Label 15500 1800 0    60   ~ 0
-AREF
-Text Label 15500 1600 0    60   ~ 0
-13(SCK)
-Text Label 15500 1500 0    60   ~ 0
-12(MISO)
-Text Label 15500 1400 0    60   ~ 0
-11(**/MOSI)
-Text Label 15500 1300 0    60   ~ 0
-10(**/SS)
-Text Label 15500 1200 0    60   ~ 0
-9(**)
-Text Label 15500 1100 0    60   ~ 0
-8
 Wire Wire Line
 	2650 4250 2650 4700
 Wire Wire Line
 	2650 4700 2900 4700
-Wire Wire Line
-	15050 1700 14850 1700
-$Comp
-L power:GND #PWR027
-U 1 1 5DABB2A2
-P 14850 1700
-F 0 "#PWR027" H 14850 1450 50  0001 C CNN
-F 1 "GND" V 14855 1572 50  0000 R CNN
-F 2 "" H 14850 1700 50  0001 C CNN
-F 3 "" H 14850 1700 50  0001 C CNN
-	1    14850 1700
-	0    1    1    0   
-$EndComp
 $Comp
 L Device:R R1
 U 1 1 5DABEF28
@@ -236,54 +174,54 @@ Connection ~ 3950 8950
 $Comp
 L Device:R R7
 U 1 1 5DADF607
-P 12750 6750
-F 0 "R7" H 12820 6796 50  0000 L CNN
-F 1 "10k" H 12820 6705 50  0000 L CNN
-F 2 "Resistor_SMD:R_1210_3225Metric" V 12680 6750 50  0001 C CNN
-F 3 "~" H 12750 6750 50  0001 C CNN
-	1    12750 6750
+P 12750 6950
+F 0 "R7" H 12820 6996 50  0000 L CNN
+F 1 "10k" H 12820 6905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 12680 6950 50  0001 C CNN
+F 3 "~" H 12750 6950 50  0001 C CNN
+	1    12750 6950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	12750 6900 12750 7200
+	12750 7100 12750 7400
 Wire Wire Line
-	12750 7200 13100 7200
+	12750 7400 13100 7400
 $Comp
 L Diode:1N4148W D6
 U 1 1 5DAE3052
-P 13100 6750
-F 0 "D6" V 13054 6830 50  0000 L CNN
-F 1 "1N4148W" V 13145 6830 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-123" H 13100 6750 50  0001 C CNN
-F 3 "~" H 13100 6750 50  0001 C CNN
-	1    13100 6750
+P 13100 6950
+F 0 "D6" V 13054 7030 50  0000 L CNN
+F 1 "1N4148W" V 13145 7030 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 13100 6950 50  0001 C CNN
+F 3 "~" H 13100 6950 50  0001 C CNN
+	1    13100 6950
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	13100 6900 13100 7200
-Connection ~ 13100 7200
+	13100 7100 13100 7400
+Connection ~ 13100 7400
 Wire Wire Line
-	13100 7200 13600 7200
+	13100 7400 13600 7400
 Wire Wire Line
-	13100 6600 13100 6200
+	13100 6800 13100 6400
 $Comp
 L power:+5V #PWR020
 U 1 1 5DAE7308
-P 12750 6000
-F 0 "#PWR020" H 12750 5850 50  0001 C CNN
-F 1 "+5V" H 12765 6173 50  0000 C CNN
-F 2 "" H 12750 6000 50  0001 C CNN
-F 3 "" H 12750 6000 50  0001 C CNN
-	1    12750 6000
+P 12750 6200
+F 0 "#PWR020" H 12750 6050 50  0001 C CNN
+F 1 "+5V" H 12765 6373 50  0000 C CNN
+F 2 "" H 12750 6200 50  0001 C CNN
+F 3 "" H 12750 6200 50  0001 C CNN
+	1    12750 6200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	12750 6000 12750 6200
+	12750 6200 12750 6400
 Wire Wire Line
-	13100 6200 12750 6200
-Connection ~ 12750 6200
+	13100 6400 12750 6400
+Connection ~ 12750 6400
 Wire Wire Line
-	12750 6200 12750 6600
+	12750 6400 12750 6800
 $Comp
 L Switch:SW_Push SW1
 U 1 1 5DAEB3F6
@@ -295,11 +233,6 @@ F 3 "~" H 13800 6400 50  0001 C CNN
 	1    13800 6200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	13600 6200 13600 7200
-Connection ~ 13600 7200
-Wire Wire Line
-	13600 7200 14650 7200
 $Comp
 L power:GND #PWR023
 U 1 1 5DAF084F
@@ -314,48 +247,42 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_02x03_Odd_Even J4
 U 1 1 5DB022F8
-P 13200 4500
-F 0 "J4" H 13250 4817 50  0000 C CNN
-F 1 "Conn_02x03_Odd_Even" H 13250 4726 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 13200 4500 50  0001 C CNN
-F 3 "~" H 13200 4500 50  0001 C CNN
-	1    13200 4500
+P 13950 4500
+F 0 "J4" H 14000 4817 50  0000 C CNN
+F 1 "Conn_02x03_Odd_Even" H 14000 4726 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 13950 4500 50  0001 C CNN
+F 3 "~" H 13950 4500 50  0001 C CNN
+	1    13950 4500
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR021
 U 1 1 5DB042BD
-P 13750 4400
-F 0 "#PWR021" H 13750 4250 50  0001 C CNN
-F 1 "+5V" V 13765 4528 50  0000 L CNN
-F 2 "" H 13750 4400 50  0001 C CNN
-F 3 "" H 13750 4400 50  0001 C CNN
-	1    13750 4400
+P 14500 4400
+F 0 "#PWR021" H 14500 4250 50  0001 C CNN
+F 1 "+5V" V 14515 4528 50  0000 L CNN
+F 2 "" H 14500 4400 50  0001 C CNN
+F 3 "" H 14500 4400 50  0001 C CNN
+	1    14500 4400
 	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR022
 U 1 1 5DB052A1
-P 13750 4600
-F 0 "#PWR022" H 13750 4350 50  0001 C CNN
-F 1 "GND" H 13750 4450 50  0000 C CNN
-F 2 "" H 13750 4600 50  0000 C CNN
-F 3 "" H 13750 4600 50  0000 C CNN
-	1    13750 4600
+P 14500 4600
+F 0 "#PWR022" H 14500 4350 50  0001 C CNN
+F 1 "GND" H 14500 4450 50  0000 C CNN
+F 2 "" H 14500 4600 50  0000 C CNN
+F 3 "" H 14500 4600 50  0000 C CNN
+	1    14500 4600
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	13750 4400 13500 4400
+	14500 4400 14250 4400
 Wire Wire Line
-	13500 4600 13750 4600
+	14250 4600 14500 4600
 Wire Wire Line
-	13000 4600 12850 4600
-Wire Wire Line
-	12850 4600 12850 5500
-Wire Wire Line
-	12850 5500 13600 5500
-Wire Wire Line
-	13600 5500 13600 6200
+	13750 4600 13600 4600
 Connection ~ 13600 6200
 $Comp
 L Device:C C2
@@ -592,7 +519,7 @@ U 1 1 5DB922B5
 P 5900 1500
 F 0 "R2" H 5970 1546 50  0000 L CNN
 F 1 "1k" H 5970 1455 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1210_3225Metric" V 5830 1500 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5830 1500 50  0001 C CNN
 F 3 "~" H 5900 1500 50  0001 C CNN
 	1    5900 1500
 	1    0    0    -1  
@@ -627,13 +554,6 @@ Wire Wire Line
 Wire Wire Line
 	5150 1200 5900 1200
 Connection ~ 5150 1200
-Wire Wire Line
-	14550 7100 14550 7400
-Wire Wire Line
-	14550 7100 14650 7100
-Connection ~ 14550 7400
-Wire Wire Line
-	14550 7400 14300 7400
 $Comp
 L Amplifier_Operational:LM358 U3
 U 3 1 5DBC36D2
@@ -666,69 +586,6 @@ F 2 "" H 8000 1200 50  0001 C CNN
 F 3 "" H 8000 1200 50  0001 C CNN
 	1    8000 1200
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R3
-U 1 1 5DBC815C
-P 5950 8550
-F 0 "R3" V 5743 8550 50  0000 C CNN
-F 1 "1k" V 5834 8550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 5880 8550 50  0001 C CNN
-F 3 "~" H 5950 8550 50  0001 C CNN
-	1    5950 8550
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6100 8550 6350 8550
-$Comp
-L Device:LED_ALT D2
-U 1 1 5DBC8163
-P 5400 8550
-F 0 "D2" H 5393 8766 50  0000 C CNN
-F 1 "Yellow" H 5393 8675 50  0000 C CNN
-F 2 "LED_SMD:LED_0805_2012Metric" H 5400 8550 50  0001 C CNN
-F 3 "~" H 5400 8550 50  0001 C CNN
-	1    5400 8550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5550 8550 5800 8550
-Wire Wire Line
-	6100 8900 6350 8900
-$Comp
-L Device:LED_ALT D3
-U 1 1 5DBCD822
-P 5400 8900
-F 0 "D3" H 5393 9116 50  0000 C CNN
-F 1 "Yellow" H 5393 9025 50  0000 C CNN
-F 2 "LED_SMD:LED_0805_2012Metric" H 5400 8900 50  0001 C CNN
-F 3 "~" H 5400 8900 50  0001 C CNN
-	1    5400 8900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5550 8900 5800 8900
-$Comp
-L power:+5V #PWR015
-U 1 1 5DBF3E75
-P 6350 8900
-F 0 "#PWR015" H 6350 8750 50  0001 C CNN
-F 1 "+5V" H 6365 9073 50  0000 C CNN
-F 2 "" H 6350 8900 50  0001 C CNN
-F 3 "" H 6350 8900 50  0001 C CNN
-	1    6350 8900
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+5V #PWR014
-U 1 1 5DBF4C50
-P 6350 8550
-F 0 "#PWR014" H 6350 8400 50  0001 C CNN
-F 1 "+5V" H 6365 8723 50  0000 C CNN
-F 2 "" H 6350 8550 50  0001 C CNN
-F 3 "" H 6350 8550 50  0001 C CNN
-	1    6350 8550
-	0    1    1    0   
 $EndComp
 Wire Wire Line
 	2000 2000 2000 2100
@@ -789,30 +646,6 @@ Wire Wire Line
 	3500 4000 3600 4000
 Wire Wire Line
 	3200 1200 3650 1200
-$Comp
-L power:+5V #PWR025
-U 1 1 5DCCBCD1
-P 14400 6750
-F 0 "#PWR025" H 14400 6600 50  0001 C CNN
-F 1 "+5V" V 14400 6950 50  0000 C CNN
-F 2 "" H 14400 6750 50  0000 C CNN
-F 3 "" H 14400 6750 50  0000 C CNN
-	1    14400 6750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	14400 6750 14400 7000
-$Comp
-L Connector_Generic:Conn_01x06 P1
-U 1 1 56D70DD8
-P 13950 3000
-F 0 "P1" H 13950 2600 50  0000 C CNN
-F 1 "Analog" V 14050 3000 50  0000 C CNN
-F 2 "Socket_Arduino_Uno:Socket_Strip_Arduino_1x06" V 14100 3050 20  0000 C CNN
-F 3 "" H 13950 3000 50  0000 C CNN
-	1    13950 3000
-	1    0    0    -1  
-$EndComp
 Text GLabel 4100 6400 2    50   Input ~ 0
 Rx
 Text GLabel 4100 6500 2    50   Input ~ 0
@@ -828,12 +661,6 @@ PD5
 Text GLabel 4100 7000 2    50   Input ~ 0
 PD6
 Text GLabel 4100 7100 2    50   Input ~ 0
-PD7
-Text GLabel 5250 8550 0    50   Input ~ 0
-Rx
-Text GLabel 5250 8900 0    50   Input ~ 0
-Tx
-Text GLabel 6800 9600 0    50   Input ~ 0
 PD7
 Text GLabel 4100 5600 2    50   Input ~ 0
 A0
@@ -861,15 +688,15 @@ Text GLabel 13750 3200 0    50   Input ~ 0
 A4(SDA)
 Text GLabel 13750 3300 0    50   Input ~ 0
 A5(SCL)
-Text GLabel 15050 1900 0    50   Input ~ 0
+Text GLabel 15050 1650 0    50   Input ~ 0
 A4(SDA)
-Text GLabel 15050 2000 0    50   Input ~ 0
+Text GLabel 15050 1750 0    50   Input ~ 0
 A5(SCL)
-Text GLabel 12650 7200 0    50   Input ~ 0
+Text GLabel 12650 7400 0    50   Input ~ 0
 Reset
 Wire Wire Line
-	12650 7200 12750 7200
-Connection ~ 12750 7200
+	12650 7400 12750 7400
+Connection ~ 12750 7400
 Text GLabel 4100 5300 2    50   Input ~ 0
 XTAL1
 Text GLabel 4100 5400 2    50   Input ~ 0
@@ -905,28 +732,26 @@ Text GLabel 2800 4250 2    50   Input ~ 0
 AREF
 Wire Wire Line
 	2800 4250 2650 4250
-Text GLabel 15050 1800 0    50   Input ~ 0
-AREF
-Text GLabel 15050 1300 0    50   Input ~ 0
+Text GLabel 13800 1700 0    50   Input ~ 0
 PB2(SS)
-Text GLabel 15050 1400 0    50   Input ~ 0
+Text GLabel 13800 1800 0    50   Input ~ 0
 PB3(MOSI)
-Text GLabel 15050 1500 0    50   Input ~ 0
+Text GLabel 13800 1900 0    50   Input ~ 0
 PB4(MISO)
-Text GLabel 15050 1600 0    50   Input ~ 0
+Text GLabel 13800 2000 0    50   Input ~ 0
 PB5(SCK)
-Text GLabel 15050 1100 0    50   Input ~ 0
+Text GLabel 13800 1500 0    50   Input ~ 0
 PB0(8)
-Text GLabel 15050 1200 0    50   Input ~ 0
+Text GLabel 13800 1600 0    50   Input ~ 0
 PB1(9)
-Text GLabel 13500 4500 2    50   Input ~ 0
+Text GLabel 14250 4500 2    50   Input ~ 0
 PB3(MOSI)
-Text GLabel 12800 4500 0    50   Input ~ 0
+Text GLabel 13550 4500 0    50   Input ~ 0
 PB5(SCK)
-Text GLabel 12800 4400 0    50   Input ~ 0
+Text GLabel 13550 4400 0    50   Input ~ 0
 PB4(MISO)
 Wire Wire Line
-	12800 4400 13000 4400
+	13550 4400 13750 4400
 Text GLabel 15050 2600 0    50   Input ~ 0
 Rx
 Text GLabel 15050 2700 0    50   Input ~ 0
@@ -978,25 +803,14 @@ Wire Wire Line
 	2200 1000 2250 1000
 Wire Wire Line
 	2250 1000 2250 1200
-Text GLabel 14200 6850 1    50   Input ~ 0
+Text GLabel 14550 6900 1    50   Input ~ 0
 Vin
 Wire Wire Line
-	12800 4500 13000 4500
+	13550 4500 13750 4500
 Text GLabel 11150 1400 2    50   Input ~ 0
 PB5(SCK)
 Wire Wire Line
 	10950 1400 11150 1400
-$Comp
-L Device:R R4
-U 1 1 5DBCD81B
-P 5950 8900
-F 0 "R4" V 5743 8900 50  0000 C CNN
-F 1 "1k" V 5834 8900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 5880 8900 50  0001 C CNN
-F 3 "~" H 5950 8900 50  0001 C CNN
-	1    5950 8900
-	0    1    1    0   
-$EndComp
 $Comp
 L Regulator_Linear:NCP1117-5.0_SOT223 U2
 U 1 1 5DB67BAD
@@ -1061,7 +875,7 @@ U 1 1 5DF17941
 P 6150 1500
 F 0 "R5" H 6220 1546 50  0000 L CNN
 F 1 "1k" H 6220 1455 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1210_3225Metric" V 6080 1500 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6080 1500 50  0001 C CNN
 F 3 "~" H 6150 1500 50  0001 C CNN
 	1    6150 1500
 	1    0    0    -1  
@@ -1109,9 +923,80 @@ Wire Wire Line
 Connection ~ 3950 9400
 Wire Wire Line
 	3950 9400 3950 9500
+$Comp
+L Connector_Generic:Conn_01x06 P3
+U 1 1 5E135F13
+P 14000 1700
+F 0 "P3" H 14000 1300 50  0000 C CNN
+F 1 "Digital PB" V 14100 1700 50  0000 C CNN
+F 2 "Socket_Arduino_Uno:Socket_Strip_Arduino_1x06" V 14150 1750 20  0000 C CNN
+F 3 "" H 14000 1700 50  0000 C CNN
+	1    14000 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 5E152C49
+P 15250 1650
+F 0 "J2" H 15330 1642 50  0000 L CNN
+F 1 "I2C/TWI" H 15330 1551 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 15250 1650 50  0001 C CNN
+F 3 "~" H 15250 1650 50  0001 C CNN
+	1    15250 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x06 P1
+U 1 1 56D70DD8
+P 13950 3000
+F 0 "P1" H 13950 2600 50  0000 C CNN
+F 1 "Analog PC" V 14050 3000 50  0000 C CNN
+F 2 "Socket_Arduino_Uno:Socket_Strip_Arduino_1x06" V 14100 3050 20  0000 C CNN
+F 3 "" H 13950 3000 50  0000 C CNN
+	1    13950 3000
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	14650 7000 14400 7000
-Connection ~ 14400 7000
+	14550 6900 14550 7000
 Wire Wire Line
-	14400 7000 14400 7300
+	14550 7000 14650 7000
+Wire Wire Line
+	14650 7100 14300 7100
+Connection ~ 14300 7100
+Wire Wire Line
+	14300 7100 14300 6750
+Wire Wire Line
+	14650 7200 14300 7200
+Connection ~ 14300 7200
+Wire Wire Line
+	14300 7200 14300 7100
+Wire Wire Line
+	14650 7300 14300 7300
+Wire Wire Line
+	14300 7300 14300 7200
+Wire Wire Line
+	14650 7400 13600 7400
+Wire Wire Line
+	14650 7700 14300 7700
+Wire Wire Line
+	14300 7700 14300 7800
+Wire Wire Line
+	14650 7600 14300 7600
+Wire Wire Line
+	14300 7600 14300 7700
+Connection ~ 14300 7700
+Wire Wire Line
+	14300 7500 14300 7600
+Connection ~ 14300 7600
+Wire Wire Line
+	14300 7500 14650 7500
+Connection ~ 13600 7400
+Wire Wire Line
+	13600 6200 13600 7400
+Wire Wire Line
+	13600 4600 13600 6200
+Text GLabel 14650 7800 0    50   Input ~ 0
+AREF
+Text GLabel 6800 9600 0    50   Input ~ 0
+PB0(8)
 $EndSCHEMATC
