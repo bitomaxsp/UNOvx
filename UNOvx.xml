@@ -2,8 +2,8 @@
 <export version="D">
   <design>
     <source>C:\Users\bitomaxsp\projects\kicad\UNOvx\UNOvx.sch</source>
-    <date>11/8/2019 6:32:06 PM</date>
-    <tool>Eeschema (5.1.4)-1</tool>
+    <date>12/14/2019 11:06:42 AM</date>
+    <tool>Eeschema (5.1.5)-3</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title/>
@@ -30,7 +30,7 @@
       <value>ATmega328P-PU</value>
       <footprint>Package_DIP:DIP-28_W7.62mm</footprint>
       <datasheet>http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf</datasheet>
-      <libsource lib="MCU_Microchip_ATmega" part="ATmega328P-PU" description="20MHz, 32kB Flash, 2kB SRAM, 1kB EEPROM, DIP-28"/>
+      <libsource lib="UNOvx-rescue" part="ATmega328P-PU-MCU_Microchip_ATmega" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5DA59660</tstamp>
     </comp>
@@ -75,7 +75,7 @@
     </comp>
     <comp ref="R7">
       <value>10k</value>
-      <footprint>Resistor_SMD:R_1210_3225Metric</footprint>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -179,7 +179,7 @@
     </comp>
     <comp ref="R2">
       <value>1k</value>
-      <footprint>Capacitor_SMD:C_1210_3225Metric</footprint>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -219,7 +219,7 @@
     </comp>
     <comp ref="R5">
       <value>1k</value>
-      <footprint>Capacitor_SMD:C_1210_3225Metric</footprint>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -608,63 +608,6 @@
         <pin num="2" name="A" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="MCU_Microchip_ATmega" part="ATmega48PV-10PU">
-      <aliases>
-        <alias>ATmega48P-20PU</alias>
-        <alias>ATmega48A-PU</alias>
-        <alias>ATmega48PA-PU</alias>
-        <alias>ATmega88PV-10PU</alias>
-        <alias>ATmega88P-20PU</alias>
-        <alias>ATmega88A-PU</alias>
-        <alias>ATmega88PA-PU</alias>
-        <alias>ATmega168PV-10PU</alias>
-        <alias>ATmega168P-20PU</alias>
-        <alias>ATmega168A-PU</alias>
-        <alias>ATmega168PA-PU</alias>
-        <alias>ATmega328-PU</alias>
-        <alias>ATmega328P-PU</alias>
-      </aliases>
-      <description>10MHz, 4kB Flash, 512B SRAM, 256B EEPROM, DIP-28</description>
-      <docs>http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8025-8-bit-AVR-Microcontroller-ATmega48P-88P-168P_Datasheet.pdf</docs>
-      <footprints>
-        <fp>DIP*W7.62mm*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">U</field>
-        <field name="Value">ATmega48PV-10PU</field>
-        <field name="Footprint">Package_DIP:DIP-28_W7.62mm</field>
-      </fields>
-      <pins>
-        <pin num="1" name="~RESET~/PC6" type="3state"/>
-        <pin num="2" name="PD0" type="3state"/>
-        <pin num="3" name="PD1" type="3state"/>
-        <pin num="4" name="PD2" type="3state"/>
-        <pin num="5" name="PD3" type="3state"/>
-        <pin num="6" name="PD4" type="3state"/>
-        <pin num="7" name="VCC" type="power_in"/>
-        <pin num="8" name="GND" type="power_in"/>
-        <pin num="9" name="XTAL1/PB6" type="3state"/>
-        <pin num="10" name="XTAL2/PB7" type="3state"/>
-        <pin num="11" name="PD5" type="3state"/>
-        <pin num="12" name="PD6" type="3state"/>
-        <pin num="13" name="PD7" type="3state"/>
-        <pin num="14" name="PB0" type="3state"/>
-        <pin num="15" name="PB1" type="3state"/>
-        <pin num="16" name="PB2" type="3state"/>
-        <pin num="17" name="PB3" type="3state"/>
-        <pin num="18" name="PB4" type="3state"/>
-        <pin num="19" name="PB5" type="3state"/>
-        <pin num="20" name="AVCC" type="power_in"/>
-        <pin num="21" name="AREF" type="passive"/>
-        <pin num="22" name="GND" type="passive"/>
-        <pin num="23" name="PC0" type="3state"/>
-        <pin num="24" name="PC1" type="3state"/>
-        <pin num="25" name="PC2" type="3state"/>
-        <pin num="26" name="PC3" type="3state"/>
-        <pin num="27" name="PC4" type="3state"/>
-        <pin num="28" name="PC5" type="3state"/>
-      </pins>
-    </libpart>
     <libpart lib="Regulator_Linear" part="AP1117-15">
       <aliases>
         <alias>AP1117-18</alias>
@@ -739,6 +682,46 @@
         <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="UNOvx-rescue" part="ATmega328P-PU-MCU_Microchip_ATmega">
+      <footprints>
+        <fp>DIP*W7.62mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ATmega328P-PU-MCU_Microchip_ATmega</field>
+        <field name="Footprint">Package_DIP:DIP-28_W7.62mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~RESET~/PC6" type="3state"/>
+        <pin num="2" name="PD0" type="3state"/>
+        <pin num="3" name="PD1" type="3state"/>
+        <pin num="4" name="PD2" type="3state"/>
+        <pin num="5" name="PD3" type="3state"/>
+        <pin num="6" name="PD4" type="3state"/>
+        <pin num="7" name="VCC" type="power_in"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="XTAL1/PB6" type="3state"/>
+        <pin num="10" name="XTAL2/PB7" type="3state"/>
+        <pin num="11" name="PD5" type="3state"/>
+        <pin num="12" name="PD6" type="3state"/>
+        <pin num="13" name="PD7" type="3state"/>
+        <pin num="14" name="PB0" type="3state"/>
+        <pin num="15" name="PB1" type="3state"/>
+        <pin num="16" name="PB2" type="3state"/>
+        <pin num="17" name="PB3" type="3state"/>
+        <pin num="18" name="PB4" type="3state"/>
+        <pin num="19" name="PB5" type="3state"/>
+        <pin num="20" name="AVCC" type="power_in"/>
+        <pin num="21" name="AREF" type="passive"/>
+        <pin num="22" name="GND" type="passive"/>
+        <pin num="23" name="PC0" type="3state"/>
+        <pin num="24" name="PC1" type="3state"/>
+        <pin num="25" name="PC2" type="3state"/>
+        <pin num="26" name="PC3" type="3state"/>
+        <pin num="27" name="PC4" type="3state"/>
+        <pin num="28" name="PC5" type="3state"/>
+      </pins>
+    </libpart>
   </libparts>
   <libraries>
     <library logical="Amplifier_Operational">
@@ -756,9 +739,6 @@
     <library logical="Diode">
       <uri>C:\Program Files\KiCad\share\kicad\library/Diode.lib</uri>
     </library>
-    <library logical="MCU_Microchip_ATmega">
-      <uri>C:\Program Files\KiCad\share\kicad\library/MCU_Microchip_ATmega.lib</uri>
-    </library>
     <library logical="Regulator_Linear">
       <uri>C:\Program Files\KiCad\share\kicad\library/Regulator_Linear.lib</uri>
     </library>
@@ -767,6 +747,9 @@
     </library>
     <library logical="Switch">
       <uri>C:\Program Files\KiCad\share\kicad\library/Switch.lib</uri>
+    </library>
+    <library logical="UNOvx-rescue">
+      <uri>C:\Users\bitomaxsp\projects\kicad\UNOvx/UNOvx-rescue.lib</uri>
     </library>
   </libraries>
   <nets>
